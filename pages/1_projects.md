@@ -7,8 +7,8 @@ permalink: /projects/
 
 * content
 {:toc}
-
 # All my projects
+
 Following are projects started by me. 
 
 ## NPL project
@@ -19,7 +19,7 @@ Following are projects started by me.
 
 NPL(Neural Parallel Language) is a new programming language. It was started as my exploration of coding logics in a networked environment.    
 Throughout the years, I have written over a million lines of code with it. All my other projects since 2005 is written in it. 
- 
+
 
 ## Paracraft
 * Started: 2012-present
@@ -38,7 +38,8 @@ I am using it to promote NPL language in self learning college to teach students
 * Website: [www.paraengine.com](http://www.paraengine.com)
    * ParaEngine Developer Site (PEDN)
    * MCML: a markup language to create GUI
-    
+   
+
 ParaEngine is a 3d distributed game engine I wrote with C++/NPL. It has become the low-level code framework for all my other projects since 2005. 
 
 ## Magic Haqi
