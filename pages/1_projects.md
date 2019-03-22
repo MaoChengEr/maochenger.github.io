@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Projects
+title: 项目
 comments: true
 permalink: /projects/
 ---
 
 * content
 {:toc}
-# All my projects
+# 我参与完成的项目和工具
 
-Following are projects started by me. 
+以下是我完成的项目 
 
-## NPL project
+## 级进模CAM加工
 * Started: 2004-present
 * Website: [www.nplproject.com](http://www.nplproject.com)
    * NPL Code Wiki
@@ -21,7 +21,7 @@ NPL(Neural Parallel Language) is a new programming language. It was started as m
 Throughout the years, I have written over a million lines of code with it. All my other projects since 2005 is written in it. 
 
 
-## Paracraft
+## EDM电极项目
 * Started: 2012-present
 * Website: [www.paracraft.cn](http://www.paracraft.cn)
    * [ParacraftSDK](https://github.com/LiXizhi/ParaCraftSDK)
@@ -33,7 +33,7 @@ Paracraft is an extensible tool that everyone can learn to create videos and com
 I am using it to promote NPL language in self learning college to teach students programming.  
 
 
-## ParaEngine
+## HT项目
 * Started: 2005-present
 * Website: [www.paraengine.com](http://www.paraengine.com)
    * ParaEngine Developer Site (PEDN)
@@ -42,7 +42,7 @@ I am using it to promote NPL language in self learning college to teach students
 
 ParaEngine is a 3d distributed game engine I wrote with C++/NPL. It has become the low-level code framework for all my other projects since 2005. 
 
-## Magic Haqi
+## 抽奖游戏
 * Started: 2009-2014 (still operating)
 * Website: [haqi.61.com](http://haqi.61.com)
    * user forum
@@ -51,7 +51,7 @@ ParaEngine is a 3d distributed game engine I wrote with C++/NPL. It has become t
 Magic Haqi is a free/paid 3D MMORPG published by taomee in November, 2009, allowing kids to play, create and share 3d worlds. It has over 5 million registered users and tens of thousands of user created works in China. The software is developed and owned by the developers of Paracraft, but has nothing to do with Paracraft. The initial version of paracraft was developed as a module in Magic Haqi. We have valid contract with its publisher taomee for their use of paracraft and its source code. 
 
 
-## Magic Haqi2
+## 
 * Started: 2012-2013 (still operating)
 * Website: [haqi2.61.com](http://www.61.com/haqi2/home.html)
 
@@ -70,6 +70,7 @@ It used to be hosted on www.pala5.cn. It is a community based world creation gam
 Kids Movie Creator is a very old shareware released in 2006, allowing kids to create 3d world and make movies. 
 
 ## Before 2005
+
 * Started: 1989-2005 (very old ones)
 * [Xizhi's old website before 2005](/oldsite2005/projects.htm). 
 
