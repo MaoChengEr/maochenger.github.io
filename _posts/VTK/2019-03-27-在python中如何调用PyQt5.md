@@ -4,8 +4,8 @@ comments: true
 categories: QT
 ---
 
-## 在python中如何调用PyQt5
-
+* content
+{:toc}
 #### 1.准备环境，工具，软件
 
 **环境：**win10,x64
