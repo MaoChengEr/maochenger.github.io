@@ -96,37 +96,31 @@ Working Directory：$FileDir$
 
 ![1553676692036](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553676692036.png)
 
-6.在pyqt5.中会生成这么一段代码，但是这段代码是不能运行的，需要在添加一些代码。（5-44是生成的代码，其他的需要自己手动添加）
+6.在pyqt5.中会生成这么一段代码，但是这段代码是不能运行的，需要在添加一些代码。（注释部分需要自己手动添加）
 
 ```python
-from PyQt5.QtWidgets import QApplication, QMainWindow
+# from PyQt5.QtWidgets import QApplication, QMainWindow
+# import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
-import sys
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(384, 381)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.qvtkWidget = QVTKWidget(self.centralwidget)
-        self.qvtkWidget.setGeometry(QtCore.QRect(200, 110, 100, 100))
-        self.qvtkWidget.setObjectName("qvtkWidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(110, 350, 75, 61))
+        self.pushButton.setGeometry(QtCore.QRect(150, 70, 75, 23))
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(210, 270, 75, 61))
+        self.pushButton_2.setGeometry(QtCore.QRect(150, 150, 75, 23))
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_3.setGeometry(QtCore.QRect(210, 350, 75, 61))
+        self.pushButton_3.setGeometry(QtCore.QRect(150, 230, 75, 23))
         self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_4.setGeometry(QtCore.QRect(310, 350, 75, 61))
-        self.pushButton_4.setObjectName("pushButton_4")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 23))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 384, 23))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -139,18 +133,17 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton.setText(_translate("MainWindow", "PushButton"))
-        self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
-        self.pushButton_3.setText(_translate("MainWindow", "PushButton"))
-        self.pushButton_4.setText(_translate("MainWindow", "PushButton"))
-        
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    MainWindow = QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
+        self.pushButton.setText(_translate("MainWindow", "A"))
+        self.pushButton_2.setText(_translate("MainWindow", "B"))
+        self.pushButton_3.setText(_translate("MainWindow", "C"))
+
+# if __name__ == '__main__':
+#     app = QApplication(sys.argv)
+#     MainWindow = QMainWindow()
+#     ui = Ui_MainWindow()
+#     ui.setupUi(MainWindow)
+#     MainWindow.show()
+#     sys.exit(app.exec_())
 ```
 
 7.点击运行后生成如下图片，说明生成成功。
