@@ -291,16 +291,16 @@ df01.replace({np.NaN:'hahah',1:'heiheih'})   # 根据值进行替换
 > sort_index 对行或列索引进行排序。
 > Series 的 sort_index(ascending=True) 方法可以对 index 进行排序操作，ascending 参数用于控制升序或降序，默认为升序。
 > 在 DataFrame 上，.sort_index(axis=0, ascending=True) 方法多了一个轴向的选择参数
->
-> ###### 3.6.2Pandas排序之sort_values
->
-> > 对Series按值进行排序, 排序时，任何缺失值默认都会被放到Series的末尾。
-> >
-> > > 3.6.3Pandas排序之rank
-> > >
-> > > > 排名（ranking ） 跟排序关系密切， 且它会增设一个排名值（从1开始， 一直到数组中有效数据的数量）。
-> > > > 它跟numpy.argsort产生的间接根据索引排序差不多， 只不过它可以根据某种规则破坏平级关系。
-> > > > 默认情况下， rank是通过”为各组分配一个平均排名“的方式破坏平级关系的。
+
+###### 3.6.2Pandas排序之sort_values
+
+> 对Series按值进行排序, 排序时，任何缺失值默认都会被放到Series的末尾。
+
+###### 3.6.3Pandas排序之rank
+
+>排名（ranking ） 跟排序关系密切， 且它会增设一个排名值（从1开始， 一直到数组中有效数据的数量）。
+>它跟numpy.argsort产生的间接根据索引排序差不多， 只不过它可以根据某种规则破坏平级关系。
+>默认情况下， rank是通过”为各组分配一个平均排名“的方式破坏平级关系的。
 
 ##### 3.7时间序列
 
