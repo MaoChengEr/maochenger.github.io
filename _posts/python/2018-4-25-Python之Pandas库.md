@@ -1,3 +1,11 @@
+---
+layout: post
+comments: true
+categories: python
+---
+
+* content
+{:toc}
 ### Python之Pandas库
 
 #### 1.Pandas介绍
@@ -138,7 +146,7 @@ dic = {
 df03 = pd.DataFrame(dic)
 ~~~
 
-![1553844515578](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553844515578.png)
+![1553844515578](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553844515578.png)
 
 ###### 2.2.3索引对象
 
@@ -188,63 +196,63 @@ df01.loc['C','b'] = np.NaN
 df01
 ~~~
 
-![1553846334601](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553846334601.png)
+![1553846334601](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553846334601.png)
 
 ~~~python
 #dropna
 df01.dropna()  # 默认会删除带有 NaN 的行  只要包含一个就整行删除
 ~~~
 
-![1553846403690](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553846403690.png)
+![1553846403690](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553846403690.png)
 
 ~~~python
 df01.dropna(axis = 1)    # 删除列中带有NaN的列
 ~~~
 
-![1553846773941](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553846773941.png)
+![1553846773941](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553846773941.png)
 
 ~~~python
 # 设置阀值
 df01 = df01.dropna(how = 'all')   # 只删除整行为  nan的行
 ~~~
 
-![1553846816263](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553846816263.png)
+![1553846816263](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553846816263.png)
 
 ~~~python
 df01.loc['E'] = np.NaN
 ~~~
 
-![1553846967923](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553846967923.png)
+![1553846967923](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553846967923.png)
 
 ~~~python
 df01.fillna(0)  # 将所有的 nan 数据替换成了 0
 ~~~
 
-![1553847003504](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847003504.png)
+![1553847003504](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847003504.png)
 
 ~~~python
 df01.fillna(method = 'ffill')   # 根据前一个值进行替换
 ~~~
 
-![1553847043076](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847043076.png)
+![1553847043076](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847043076.png)
 
 ~~~python
 df01.fillna(method = 'bfill')   # 根据后一个值进行替换
 ~~~
 
-![1553847090487](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847090487.png)
+![1553847090487](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847090487.png)
 
 ~~~python
 df01.fillna({'b':100,'c':200})   # 根据列进行替换
 ~~~
 
-![1553847112244](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847112244.png)
+![1553847112244](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847112244.png)
 
 ~~~python
 df01.replace({np.NaN:'hahah',1:'heiheih'})   # 根据值进行替换
 ~~~
 
-![1553847133749](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847133749.png)
+![1553847133749](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847133749.png)
 
 ##### 3.3算法运算和数据对齐
 
@@ -350,30 +358,30 @@ df = pd.DataFrame({
 })
 ~~~
 
-![1553847779419](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847779419.png)
+![1553847779419](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847779419.png)
 
 ~~~python
 df.pivot_table(values = ['kill','help'],index = ['address'],aggfunc = np.mean)
 # 通过index 进行 分组 查看 values 中的字段 的 aggfunc 值
 ~~~
 
-![1553847805642](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847805642.png)
+![1553847805642](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847805642.png)
 
 ~~~python
 df.groupby('address')['kill','help'].mean()
 ~~~
 
-![1553847839940](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847839940.png)
+![1553847839940](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847839940.png)
 
 ~~~python
 df.pivot_table(values = ['kill','help'],index = ['address'],aggfunc = [np.mean,np.max,np.min])
 ~~~
 
-![1553847911342](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847911342.png)
+![1553847911342](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847911342.png)
 
 ~~~python
 df.pivot_table(values = ['kill','help'],index = ['address'],columns = ['sex'],aggfunc = np.mean)
 ~~~
 
-![1553847934899](C:/Users/Fred/AppData/Roaming/Typora/typora-user-images/1553847934899.png)
+![1553847934899](https://raw.githubusercontent.com/MaoChengEr/maochenger.github.io/master/imgs/1553847934899.png)
 
