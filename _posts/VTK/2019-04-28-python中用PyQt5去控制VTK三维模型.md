@@ -1,3 +1,10 @@
+---
+layout: post
+comments: true
+categories: VTK
+---
+* content
+{:toc}
 ### 在python中用PyQt5去控制VTK三维模型
 
 #### 1.准备工作
