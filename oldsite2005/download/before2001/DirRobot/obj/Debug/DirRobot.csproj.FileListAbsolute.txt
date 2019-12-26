@@ -1,8 +1,0 @@
-D:\guthub\github\MaoChengEr.github.io\oldsite2005\download\before2001\DirRobot\bin\Debug\DirRobot.exe
-D:\guthub\github\MaoChengEr.github.io\oldsite2005\download\before2001\DirRobot\bin\Debug\DirRobot.pdb
-D:\guthub\github\MaoChengEr.github.io\oldsite2005\download\before2001\DirRobot\obj\Debug\DirRobot.csprojResolveAssemblyReference.cache
-D:\guthub\github\MaoChengEr.github.io\oldsite2005\download\before2001\DirRobot\obj\Debug\DirRobot.AgentWnd.resources
-D:\guthub\github\MaoChengEr.github.io\oldsite2005\download\before2001\DirRobot\obj\Debug\DirRobot.QueryDlg.resources
-D:\guthub\github\MaoChengEr.github.io\oldsite2005\download\before2001\DirRobot\obj\Debug\DirRobot.csproj.GenerateResource.Cache
-D:\guthub\github\MaoChengEr.github.io\oldsite2005\download\before2001\DirRobot\obj\Debug\DirRobot.exe
-D:\guthub\github\MaoChengEr.github.io\oldsite2005\download\before2001\DirRobot\obj\Debug\DirRobot.pdb
