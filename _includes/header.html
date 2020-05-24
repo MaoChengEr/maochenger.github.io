@@ -1,43 +1,27 @@
-<header>
-
-<!-- navbar -->
-  <nav class="navbar navbar-inverse">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-      <p class="navbar-text"></p>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-
-        {% if page.url == "/index.html" %}
-          <li class="active">
-          {% else %}
-          <li>
-        {% endif %}
-        <a href="{{ site.baseurl }}/">Home</a></li>
-
-        {% for p in site.pages %}
-          {% if p.title %}
-            {% if p.url == page.url %}
-              <li class="active">
-              {% else %}
-              <li>
+<header class="bar-header">
+    <a id="menu" role="button">
+        <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+    </a>
+    <h1 class="logo">
+        <a href="{{ site.baseurl }}/">
+            {% if site.use_logo %}
+                {% include logo.html %}
+            {% else %}
+                {{ site.name }} <span class="version">{{ site.version }}</span>
             {% endif %}
-            <a href="{{ p.url | prepend: site.baseurl }}"><span class="glyphicon {{ p.icon }}"></span> {{ p.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
+        </a>
+    </h1>
+    <a id="search" class="dosearch" role="button">
+        <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
+    </a>
+    {% if site.show_get_theme_btn %}
+        <a href="https://github.com/thiagorossener/jekflix-template" class="get-theme" role="button">
+            Get this theme!
+        </a>
+    {% endif %}
 </header>
+
+<div id="mask" class="overlay"></div>
+
+{% include menu.html %}
+{% include search.html %}
